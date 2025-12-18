@@ -8,4 +8,4 @@ OUTPUT (to ./splose_flattened.csv by default):
 
 You may modify config.json, especially "form_titles" (which really should have been a built-in filter on Splose.com).
 
-Attempt to modify splose_export_to_flat_csv.py can end up being an endless and hopelessness battle with AI vomitus.
+Attempt to modify splose_export_to_flat_csv.py can end up being an endless and hopeless battle with AI vomitus.
