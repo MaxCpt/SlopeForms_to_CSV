@@ -1,0 +1,13 @@
+{
+  "form_titles": ["Request for Mobile Session (Home or School/Childcare)"],
+
+  "other_interested_keys":["ndisNumber", "addressL1", "addressL2", "addressL3"],
+
+  "input_csv": "splose_export.csv",
+  "output_csv": "splose_flattened.csv",
+
+  "title_col": null,
+  "json_col": null,
+  "date_col": null,
+  "meta_cols": null
+}
