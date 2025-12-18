@@ -238,13 +238,12 @@ def extract_answer(
         sig = q.get("signature")
         return "signed" if (isinstance(sig, str) and sig.strip()) else "not signed"
 
-    txt = None
+    txt = []
     for key in ["answerText"] + other_interested_keys:
-        txt = clean_text(q.get(key) or "")
-        if txt and txt != "":
-            return txt
+        if clean_text(q.get(key) or ""):
+            txt.append(clean_text(q.get(key) or ""))
 
-    return txt if txt else None
+    return "; ".join(txt) if txt else None
 
 
 def unique_title(base: str, q: Dict[str, Any], seen) -> str:
